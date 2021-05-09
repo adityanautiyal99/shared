@@ -1,3 +1,18 @@
-def call(String name = 'shared.git') {
-	git 'https://github.com/adityanautiyal99/{name}'
+def call(String repoUrl) {
+  pipeline {
+       agent any
+       stages {
+           stage("Tools initialization") {
+               steps {
+                   sh "mvn --version"
+                   sh "java -version"
+               }
+           }
+           stage("Checkout Code") {
+               steps {
+                   git "${repoUrl}"
+               }
+           }
+       }
+   }
 }
