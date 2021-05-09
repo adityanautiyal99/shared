@@ -1,3 +1,3 @@
-def call(repo) {
+def call(String name = 'User') {
 		echo "Welcome, ${name}."
 }
