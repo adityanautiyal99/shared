@@ -1,3 +1,6 @@
-def call(name) {
-		echo "Welcome, ${name}."
+#!/usr/bin/env groovy
+
+def call(String name = 'human') {
+    echo "Hello, ${name}."
 }
+
