@@ -1,7 +1,5 @@
 def call(String repoUrl) {
-  pipeline {
-       agent any
-       stages {
+  node {
            stage("Tools initialization") {
                steps {
                    sh "mvn --version"
@@ -14,5 +12,4 @@ def call(String repoUrl) {
                }
            }
        }
-   }
 }
