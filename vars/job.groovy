@@ -4,7 +4,7 @@ def call(String repoUrl) {
                    sh "mvn --version"
                    sh "java -version"
                }
-           stage("Checkout Code") {
+           stage("cloning repo") {
                    git "${repoUrl}"
                }
        }
