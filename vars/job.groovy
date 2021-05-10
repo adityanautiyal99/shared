@@ -5,7 +5,7 @@ def call(String repoUrl) {
                    sh "java -version"
                }
            stage("Checkout Code") {
-                   git "${repoUrl}"
+                   sh "git clone ${repoUrl}"
                }
        }
 }
