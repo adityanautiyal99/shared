@@ -1,3 +1,3 @@
-def call (){
+def war(){
   sh "mvn package"
 }
