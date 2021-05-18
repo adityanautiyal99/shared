@@ -1,4 +1,4 @@
-def call(String repoUrl) {
+def call() {
   sh '''
   mvn --version
   java -version
