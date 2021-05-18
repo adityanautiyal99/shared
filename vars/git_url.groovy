@@ -1,3 +1,3 @@
-def url (string repoUrl) {
+def url (String repoUrl) {
   git "${repoUrl}"
 }
