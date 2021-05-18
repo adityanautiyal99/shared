@@ -1,3 +1,3 @@
-def compile(){
+def call(){
   sh "mvn clean compile" 
 }
